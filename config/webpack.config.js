@@ -5,7 +5,7 @@ var StatsPlugin = require('stats-webpack-plugin');
 module.exports = {
   // This is the main file that should include all other JS files
   entry: [
-    "../src/index.js",
+    "./src/index.js",
     'webpack-hot-middleware/client?reload=true'
   ],
   resolve: {
@@ -49,8 +49,7 @@ module.exports = {
           "presets": ['es2015', 'stage-0', 'react'],
           "plugins": [
             "extensible-destructuring",
-            "transform-decorators-legacy",
-            "transform-react-display-name"
+            "transform-decorators-legacy"
           ],
           "env": {
             "development": {
