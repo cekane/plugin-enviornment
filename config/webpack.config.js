@@ -38,10 +38,7 @@ module.exports = {
         loader: 'json-loader'
       },
       { test: /\.css/, loaders: ["style-loader", "css-loader?modules&importLoaders=1&localIdentName=[path][name]--[local]"] },
-      { test: /\.scss/,
-        exclude: /scripts.+\.scss/,
-        loaders: ["style-loader", "css-loader?importLoaders=1!sass"] },
-      { test: /scripts.+\.scss/, loaders: ["style-loader", "css-loader?modules&importLoaders=1&localIdentName=[path][name]--[local]!sass"] },
+      { test: /\.scss$/, loaders: ["style", "css?modules", "sass"] },
       { test: /\.js$/, exclude: /node_modules/, loader: 'transform?brfs'},
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader',
         query: {
