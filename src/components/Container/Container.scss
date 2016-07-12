@@ -4,9 +4,9 @@ span.container{
 }
 
 .item{
-	flex-grow:1;
+	width:50%;
 	height: 800px;
-	background-color: #00bcd4;
+	background: linear-gradient(165deg, #3c83a0 0%, #3c83a0 40%, #59a5a5 110%);
 	margin:10px;
 	padding:10px;
 	border-radius: 10px;

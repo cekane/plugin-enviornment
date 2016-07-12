@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container } from './Container'
+import { Container, ContainerHOC } from './Container'
+import '../../styles/main.scss'
 
 export class App extends React.Component {
 
@@ -9,7 +10,9 @@ export class App extends React.Component {
 
   render () {
     return(
-      <Container></Container>
+    	<div>
+	      <ContainerHOC></ContainerHOC>
+	    </div>
     )
   }
 }

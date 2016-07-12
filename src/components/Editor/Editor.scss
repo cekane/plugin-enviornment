@@ -1,0 +1,43 @@
+table.stable{
+  width:100%;
+  align: center;
+}
+
+td.underline{
+  border-bottom: 1px solid white;
+}
+
+span.fieldName{
+  display:flex;
+  align-items: center;
+}
+
+.fieldName > input:nth-child(1){ flex-grow: 5; }
+.fieldName > div:nth-child(2){ flex-grow: 1; }
+
+
+.rightAlign{
+  
+  float:right;
+  float: bottom;
+}
+
+.tdStyle{
+  vertical-align: top;
+}
+
+.tdRight{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.toggleStyle{
+  vertical-align: bottom;
+  padding:0px;
+  margin:0px;
+  float: right;
+
+}
+
+
