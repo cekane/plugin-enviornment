@@ -1,6 +1,5 @@
-![alt text][logo]
+![alt text](https://github.com/cekane/plugin-enviornment/tree/master/src/ms-icon-310x310.png "Windrush")
 
-[logo]: https://github.com/cekane/plugin-enviornment/tree/master/src/ms-icon-310x310.png "Windrush"
 
 Start Harness:
 node ./config/dev_server
