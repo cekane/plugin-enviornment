@@ -1,0 +1,119 @@
+$good: rgb(149, 191, 114);
+$ok: rgb(209, 191, 80);
+$bad: rgb(191, 128, 114);
+$no: #333;
+$primary: #3c83a0;
+
+@mixin btnMix($color) {
+  border-color: $color !important;
+  cursor: pointer;
+
+  &:hover, &.chosen {
+    background-color: $color !important;
+    color: #ffffff !important;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 2px 1px transparentize($no, 0.5);
+  }
+
+  &.neutralBtn:active, &.chosen.neutralBtn {
+    box-shadow: 0 1px 1px 1px transparentize($no, 0.8), inset 0 1px 1px 1px transparentize($no, 0.4) !important;
+  }
+}
+
+.typeGroup {
+  overflow: auto;
+}
+
+.btn {
+  // float: left;
+  display: inline-block;
+  min-width: 85px;
+
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+
+  border: 2px solid transparent;
+  border-radius: 25px / 50%;
+
+  padding: 10px 15px;
+  margin: 5px;
+
+  box-shadow: 0 1px 1px 1px transparentize($no, 0.8);
+
+  transition: all 200ms ease-out, box-shadow 200ms ease-out;
+}
+
+.btn.square {
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  padding: 10px 12px;
+  min-width: 0;
+}
+
+.btn.small {
+  font-style: 0.9em;
+  min-width: 0;
+  padding: 5px;
+  margin: 2px;
+}
+
+.btn.thickBorders {
+  border: 3px solid transparent;
+}
+
+.btn.goodBtn {
+  @include btnMix($good);
+}
+
+.btn.mediumBtn {
+  @include btnMix($ok);
+}
+
+.btn.badBtn {
+  @include btnMix($bad);
+}
+
+.btn.neutralBtn {
+  @include btnMix($no);
+}
+
+.btn.primaryBtn {
+  @include btnMix($primary);
+}
+
+.btn.mutedBtn {
+  cursor: pointer;
+  border: none;
+  box-shadow:  0 1px 1px 1px transparentize($no, 0.4), inset 0 1px 1px 1px transparentize($no, 1);
+
+
+  &:hover {
+    box-shadow: 0 2px 2px 1px transparentize($no, 0.2), inset 0 1px 1px 1px transparentize($no, 1);
+  }
+
+  &:active, &.chosen {
+    box-shadow: 0 2px 2px 1px transparentize($no, 1), inset 0 1px 1px 1px transparentize($no, 0.4) !important;
+  }
+
+
+}
+
+.nonfunctionalBtn {
+  border-color: #aaaaaa;
+
+  .btnInner {
+    opacity: 0.35;
+  }
+}
+
+.disabledBtn {
+  border-color: #aaaaaa;
+
+  .btnInner {
+    opacity: 0.35;
+  }
+}

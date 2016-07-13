@@ -62,11 +62,12 @@ export class Viewer extends React.Component{
             {console.log("VALIDATE EMAIL", this.validateEmail(this.props.data.email))}
             {this.visibleFields(this.props.data.fields)}
             <p>{ this.state.errorMsg }</p>
-            <Button  text={'Submit'} handleOnClick={
+            <Button  type="good" onClick={
               function(){
                   console.log("You would have submited stuff")
                 }
               }>
+              <h4>Submit</h4>
             </Button>
           </div>
         </Case>

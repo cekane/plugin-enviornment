@@ -11,11 +11,9 @@ export class Container extends React.Component{
 
   constructor(props){
     super(props);
-    this.state = { data: 'hello' }
   }
 
   render () {
-    console.log("IN RENDER FOR CONTAINER")
     return(
         <span className={ container }>
           <div className={ item }>

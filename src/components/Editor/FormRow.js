@@ -16,7 +16,8 @@ export const FormRow = React.createClass({
     return(
       <tr>  
         <td className = { tdStyle } >
-          <Button handleOnClick={ onClick } size={ 'small' } color={ 'red' } text={ 'Delete' }>
+          <Button type="bad" small solid onClick={ onClick }>
+            x
           </Button>
           { this.props.text }
         </td>

@@ -59,13 +59,24 @@ export class Editor extends React.Component{
               className = "form-control" 
               type = "text"
               ref = "field"
+              onKeyPress = { 
+              k=>{
+                  if(k.key === 'Enter')
+                  {
+                    that.addField(that.refs.field.value)
+                    that.refs.field.value = ''
+                  }   
+                } 
+              }
             />
-            <Button text={ 'Click Me' } size={ 'small' } handleOnClick={ 
-              function(){
+            <Button type="good" small solid onClick={ 
+                  function(){
                     that.addField(that.refs.field.value)
                     that.refs.field.value = ''
                   } 
-                } />
+                }>
+              +
+            </Button>
           </span>
         </li>
         <li>
