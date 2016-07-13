@@ -1,5 +1,5 @@
 ![alt text][logo]
-[logo]: https://github.com/cekane/plugin-enviornment/blob/master/src/ms-icon-310x310.png "Windrush"
+[logo]: https://github.com/cekane/plugin-enviornment/blob/master/src/ms-icon-144x144.png "Windrush"
 # Windrush Content Type Plugin Enviornment
 
 
