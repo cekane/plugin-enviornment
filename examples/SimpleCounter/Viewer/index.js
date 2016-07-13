@@ -1,19 +1,18 @@
 import React from 'react'
-import {  } from './Editor.scss'
 import { Button } from '../Button'
 import { Select, Case } from '../Select'
+import {  } from './Viewer.scss'
 
 import className from 'classnames'
 
-export class Editor extends React.Component{
+export class Viewer extends React.Component{
   constructor (props) {
     super(props);
   }
 
   render(){
-    const that = this
-    return(
-      <div>In Editor</div>
+    return (
+      <div>{ this.props.data.count }</div>
     )
   }
 }
