@@ -19,7 +19,7 @@ node ./config/dev_server
 ```
 
 ## Development
-You can find examples of exsisting content types in [examples](https://github.com/cekane/plugin-enviornment/tree/master/examples/Form). If you want to play around with exsisting content types you can copy the editor and viewer directories from an example and paste them over the editor and viewer directories in src/components.
+You can find examples of exsisting content types in [examples](https://github.com/cekane/plugin-enviornment/tree/master/examples). If you want to play around with exsisting content types you can copy the editor and viewer directories from an example and paste them over the editor and viewer directories in src/components.
 
 There are two sides to each content type, the content-type-editor, and the content-type-viewer. The editor side is what defines the viewer side. In order for this communication to occur you want to use our higher order component function `handleChange`, and our pre-defined empty prop object `data`.
 
