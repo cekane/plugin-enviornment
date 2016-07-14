@@ -1,0 +1,26 @@
+Still to do:
+1. Test with other components from app
+2. Wrap helper components into a compiled ball of javascript
+	-Button 
+	-Icon 
+	-Select, Case 
+	-Toggle 
+	-InputWithValidation
+	-FileInput
+	-lib/utils ( readImageDimensions, decode_entities, option, deepFind, zip, without, Option, IfElse )
+	-lib/DC3/chart ( DC3Chart )
+	-lib/colors ( getColorsFromHex )
+	-lib/dataSource ( sheetToC3 )
+	-lib/parser ( fromStoreable )
+	-lib/datapipeline/messages ( MESSAGES ) 
+	-lib/state ( state )
+	-ContentEditable
+	-lodash ( _ )
+	-components/containers/DataContainer ( DataContainer ) 
+	-components/datasource/WrapWithLoadingInfo ( WrapWithLoadingInfo ) 
+	
+
+*Should I write a guide on how to use ^ components*
+
+3. Compiled Styles from the app
+4. Figure out next step after content type has been completed

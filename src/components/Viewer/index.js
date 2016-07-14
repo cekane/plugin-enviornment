@@ -1,6 +1,6 @@
 import React from 'react'
-import { Button } from '../Button'
-import { Select, Case } from '../Select'
+import { Button } from '../Helpers/Button'
+import { Select, Case } from '../Helpers/Select'
 import {  } from './Viewer.scss'
 
 import className from 'classnames'
@@ -12,7 +12,9 @@ export class Viewer extends React.Component{
 
   render(){
     return (
-      <div>In Viewer</div>
+      <div>
+        Inside Viewer
+      </div>
     )
   }
 }

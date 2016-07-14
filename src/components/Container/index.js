@@ -5,7 +5,7 @@ import { container, item } from './Container.scss';
 import { Viewer } from '../Viewer'
 import { Editor } from '../Editor'
 import { ComponentEditor } from '../ComponentEditor'
-import { Button } from '../Button'
+import { Button } from '../Helpers/Button'
 
 export class Container extends React.Component{
 

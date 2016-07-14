@@ -43,7 +43,6 @@ export function ComponentEditor(WrappedComponent) {
       const that = this
 
       if (Array.isArray(path)) {
-        console.log("INSIDE ARRAY")
         return function (event) {
           var temp = event.target.value;
 
@@ -70,7 +69,6 @@ export function ComponentEditor(WrappedComponent) {
       }
 
       return function(event){
-        console.log("INSIDE NORMAL- EVENT", event)
         var temp = event.target.value;
         if (event.target.getAttribute && event.target.getAttribute('type') === 'checkbox') {
           temp = !!event.target.checked;
@@ -128,7 +126,6 @@ export function ComponentEditor(WrappedComponent) {
         if (path.indexOf('sizes') !== -1) {
           mut.data.columns = {$set: event.target.value.length};
         }
-        console.log("MUT", mut)
         let newState = update(that.state, mut)
         that.setState(newState);
       }
